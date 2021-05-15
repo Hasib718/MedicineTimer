@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/daysGrid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="1"
+    android:padding="10dp"
+    android:rowCount="7"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/day1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_id_1"
+        android:textSize="20sp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/day2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_id_2"
+        android:textSize="20sp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/day3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_id_3"
+        android:textSize="20sp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/day4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_id_4"
+        android:textSize="20sp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/day5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_id_5"
+        android:textSize="20sp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/day6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_id_6"
+        android:textSize="20sp" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/day7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/day_id_7"
+        android:textSize="20sp" />
+
+</GridLayout>

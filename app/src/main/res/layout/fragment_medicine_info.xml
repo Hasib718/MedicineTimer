@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.MaterialCardView.Cut"
+            app:cardBackgroundColor="#F4F3F3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reminderTime"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Reminder Times"
+                    android:textSize="20sp"
+                    android:textColor="@color/White"
+                    android:background="#673AB7"
+                    android:padding="5dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeDoseRecyclerViewTable"
+                    app:layout_constraintTop_toBottomOf="@id/reminderTime"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="30dp" />
+
+                <!--                <View-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="1dp"-->
+                <!--                    android:background="#673AB7"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@id/timeDoseRecyclerViewTable"-->
+                <!--                    android:layout_marginLeft="15dp"-->
+                <!--                    android:layout_marginRight="15dp"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    android:layout_marginTop="5dp"-->
+                <!--                    android:id="@+id/underline2" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTime"
+            android:layout_marginTop="10dp"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.MaterialCardView.Cut"
+            app:cardBackgroundColor="#F4F3F3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/medicineSchedule"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Medicine Schedule"
+                    android:textSize="20sp"
+                    android:textColor="@color/White"
+                    android:background="#673AB7"
+                    android:padding="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/medicineStartDate"
+                    app:layout_constraintTop_toBottomOf="@id/medicineSchedule"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="Start Date"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/Black" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/medicineStartDateInput"
+                    app:layout_constraintTop_toBottomOf="@id/medicineSchedule"
+                    app:layout_constraintStart_toEndOf="@id/medicineStartDate"
+                    android:text="Start Date"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7"
+                    app:layout_constraintTop_toBottomOf="@id/medicineStartDate"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/underline3" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/medicineDuration"
+                    app:layout_constraintTop_toBottomOf="@id/underline3"
+                    android:text="Duration"
+                    android:textSize="18sp"
+                    android:textColor="@color/Black"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/durationText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/medicineDuration"
+                    android:text="7"
+                    android:layout_marginStart="60dp"
+                    android:textSize="15sp"
+                    android:gravity="center" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#673AB7"
+                    app:layout_constraintTop_toBottomOf="@id/durationText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:id="@+id/underline4" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/medicineDays"
+                    app:layout_constraintTop_toBottomOf="@id/underline4"
+                    android:text="Days"
+                    android:textSize="18sp"
+                    android:textColor="@color/Black"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/daysInterval"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/medicineDays"
+                    android:text="Every 2 days"
+                    android:textSize="15sp"
+                    android:layout_marginStart="60dp"
+                    android:gravity="center" />
+
+                <!--                <View-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="1dp"-->
+                <!--                    android:background="#673AB7"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@id/daysInterval"-->
+                <!--                    android:layout_marginLeft="15dp"-->
+                <!--                    android:layout_marginRight="15dp"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    android:id="@+id/underline5" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

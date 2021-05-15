@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/message2"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/name"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/message4"
+        android:textColor="@color/BlueViolet"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/underline1"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:background="@color/BlueViolet"
+        android:layout_marginTop="5dp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minusButton"
+        app:layout_constraintTop_toBottomOf="@id/underline1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/round_remove_circle_outline_24"
+        android:background="@color/White"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="85dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/daysCount"
+        app:layout_constraintTop_toBottomOf="@id/underline1"
+        app:layout_constraintStart_toEndOf="@id/minusButton"
+        android:text="@string/days_count"
+        android:textColor="@color/Black"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:inputType="number"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/plusButton"
+        app:layout_constraintTop_toBottomOf="@id/underline1"
+        app:layout_constraintStart_toEndOf="@id/daysCount"
+        android:src="@drawable/round_add_circle_outline_24"
+        android:background="@color/White"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@id/minusButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setButton"
+        app:layout_constraintTop_toBottomOf="@id/plusButton"
+        app:layout_constraintStart_toEndOf="@id/cancelButton"
+        android:text="@string/set"
+        android:textAllCaps="false"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

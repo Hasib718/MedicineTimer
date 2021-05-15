@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Medicine Timer</string>
+
+    <!-- Hardcore strings used in xml files -->
+    <string name="message1">Set quantity(number of doses) to be taken at this\n hour</string>
+    <string name="message2">Reminder Time</string>
+    <string name="message3">Set time and quantity</string>
+    <string name="dose_count">1.00</string>
+    <string name="cancel">Cancel</string>
+    <string name="set">Set</string>
+    <string name="message4">Set number of days(from start date)</string>
+    <string name="days_count">7</string>
+    <string name="day_id_1">Sunday</string>
+    <string name="day_id_2">Monday</string>
+    <string name="day_id_3">Tuesday</string>
+    <string name="day_id_4">Wednesday</string>
+    <string name="day_id_5">Thursday</string>
+    <string name="day_id_6">Friday</string>
+    <string name="day_id_7">Saturday</string>
+    <string-array name="week">
+        <item>@string/day_id_1</item>
+        <item>@string/day_id_2</item>
+        <item>@string/day_id_3</item>
+        <item>@string/day_id_4</item>
+        <item>@string/day_id_5</item>
+        <item>@string/day_id_6</item>
+        <item>@string/day_id_7</item>
+    </string-array>
+</resources>
